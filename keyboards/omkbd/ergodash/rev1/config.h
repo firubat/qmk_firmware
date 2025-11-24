@@ -1,6 +1,7 @@
 /*
 Copyright 2012 Jun Wako <wakojun@gmail.com>
 Copyright 2015 Jack Humbert
+Modified 2025 Ur Ya'ar
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -16,6 +17,17 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#define TAPPING_TERM 200
 #pragma once
 
 #define AUDIO_PIN C6
+
+#define SELECT_SOFT_SERIAL_SPEED 1
+/*Sets the protocol speed when using serial communication*/
+//Speeds:
+//0: about 189kbps (Experimental only)
+//1: about 137kbps (default)
+//2: about 75kbps
+//3: about 39kbps
+//4: about 26kbps
+//5: about 20kbps
